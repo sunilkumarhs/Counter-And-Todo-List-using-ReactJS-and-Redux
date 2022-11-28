@@ -1,20 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+  background-color: rgb(0, 200, 255);
 }
 
 .App-header {
-  min-height: 100vh;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,18 +12,103 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.nav{
+  position: relative;
+    min-height: 4.2rem;
+    margin-bottom: 0px;
+    background-color: rgb(44, 42, 42);
+    padding: 4px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+button{
+  margin: 0rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.container{
+  height: 90vh;
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  border: 1rem solid gold;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Todo{
+  padding: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(230deg,rgb(15, 14, 15),rgb(126, 5, 5));
+}
+
+h1{
+  margin: 0;
+  padding-bottom:1rem;
+  color: goldenrod;
+}
+
+h3{
+  margin: 0;
+  padding: auto;
+  color:aqua;
+}
+
+.insert{
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  margin-top: 1rem;
+}
+
+.alltodos{
+  overflow-y: scroll;
+  margin: 10px;
+  padding: 0;
+
+}
+
+label{
+  color: greenyellow;
+  
+}
+
+#inputTodo{
+  height: 45px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.singletodo{
+    border-radius: 50px;
+    margin: 10px 0;
+    background-color: rgb(26, 4, 31);
+    padding: 8px 15px;
+    display: flex;
+    width:450px;
+    align-items: center;
+    color: white;
+}
+
+.todotext{
+  flex: 1;
+}
+
+.main{
+  background-color: coral;
+}
+
+@media Screen and (max-width: 640px) {
+  .alltodos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
+  .singletodo {
+    margin-right: 0;
   }
 }
+

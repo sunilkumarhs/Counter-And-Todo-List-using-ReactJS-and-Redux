@@ -7,8 +7,8 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
-} from './counterSlice';
-import styles from './Counter.module.css';
+} from '../redux/counterSlice';
+import styles from '../css/Counter.module.css';
 
 export function Counter() {
   const count = useSelector(selectCount);
@@ -19,6 +19,8 @@ export function Counter() {
 
   return (
     <div>
+       <div className="App">
+      <header className="App-header">
       <div className={styles.row}>
         <button
           className={styles.button}
@@ -62,6 +64,8 @@ export function Counter() {
           Add If Odd
         </button>
       </div>
+      </header>
+    </div>
     </div>
   );
 }
