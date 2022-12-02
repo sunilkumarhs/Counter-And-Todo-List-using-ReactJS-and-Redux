@@ -21,6 +21,7 @@ export function Counter() {
     <div>
        <div className="App">
       <header className="App-header">
+        <h1>Counter Page</h1>
       <div className={styles.row}>
         <button
           className={styles.button}

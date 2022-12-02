@@ -46,7 +46,8 @@ button{
 h1{
   margin: 0;
   padding-bottom:1rem;
-  color: goldenrod;
+  color: rgb(137, 49, 200);
+  text-align: center;
 }
 
 h3{
@@ -97,9 +98,30 @@ label{
   flex: 1;
 }
 
-.main{
-  background-color: coral;
+.section{
+  background-color: rgb(86, 55, 44);
+  background-image: repeating-radial-gradient(red, yellow 20%);
+  background-repeat:no-repeat;
+  height: 60rem;
 }
+.main{
+  
+}
+
+.block{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+p{
+  margin: 1rem;
+  color: rgb(36, 164, 143);
+  font-size: x-large;
+}
+
+
 
 @media Screen and (max-width: 640px) {
   .alltodos div {

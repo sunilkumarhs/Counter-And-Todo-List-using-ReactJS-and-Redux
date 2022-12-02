@@ -31,8 +31,8 @@
   color: rgb(112, 76, 182);
   padding-bottom: 4px;
   cursor: pointer;
-  background-color: rgba(112, 76, 182, 0.1);
-  border-radius: 2px;
+  background-color: rgb(75, 232, 135);
+  border-radius: 20px;
   transition: all 0.15s;
 }
 
