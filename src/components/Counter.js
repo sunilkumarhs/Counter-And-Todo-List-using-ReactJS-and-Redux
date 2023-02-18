@@ -9,6 +9,7 @@ import {
   selectCount,
 } from '../redux/counterSlice';
 import styles from '../css/Counter.module.css';
+import NavBar from './NavBar';
 
 export function Counter() {
   const count = useSelector(selectCount);
@@ -19,6 +20,7 @@ export function Counter() {
 
   return (
     <div>
+      <NavBar/>
        <div className="App">
       <header className="App-header">
         <h1>Counter Page</h1>

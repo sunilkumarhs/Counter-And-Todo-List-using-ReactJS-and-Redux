@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 import { connect } from 'react-redux';
 import { addTodos, removeTodos } from '../redux/TodoSlice';
 import {AnimatePresence, motion} from "framer-motion";
+import NavBar from './NavBar';
 
 const mapStateToProps = (state) => {
   return {
@@ -37,6 +38,7 @@ const Todos = (props) => {
     console.log("props from store",props);
   return (
     <div>
+      <NavBar/>
       <div className='Todo'>
         <div className='container'>
           <motion.h1 
